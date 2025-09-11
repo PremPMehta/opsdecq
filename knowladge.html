@@ -544,6 +544,12 @@
           transform-style: preserve-3d;
         }
 
+        .nav-links__child .button.w--current {
+          background-color: var(--button--background) !important;
+        }
+.button.nav__main-links.default-cursor.active {
+          background-color: var(--button--background) !important;
+        }
         /* Accordion Hover */
         @media only screen and (min-width: 991px) {
           .accordion__trigger:hover .h5 {
@@ -581,226 +587,23 @@
         </div>
         <nav role="navigation" class="nav__links-wrapper br-32 w-nav-menu">
           <div class="nav-links__child">
-            <div data-hover="false" data-delay="0" class="nav__dropdown w-dropdown">
-              <div class="nav__dropdown-toggle w-dropdown-toggle">
-                <div data-btn="wrap" btn-size="normal" btn-type="ghost" fs-linkblockedit-element="parent"
-                  tabindex="link" mode="" icon-visibility="yes" class="button nav__main-links default-cursor">
-                  <div class="button__icon-text-wrapper"><a href="index.html" class="btn-link nav-mobile">Product</a>
-                    <div class="button__icon-wrapper transition bg-grey-100"><svg data-wf--icon---new--variant="12px"
-                        viewBox="0 0 24 24" fill="none" class="icon-svg w-variant-e07b6722-35eb-26e3-dfff-2c66315d55f1">
-                        <path
-                          d="M12 3.46875C7.2832 3.46875 3.46875 7.32422 3.46875 12C3.46875 12.5742 3.01758 12.9844 2.48438 12.9844C1.91016 12.9844 1.5 12.5742 1.5 12C1.5 6.2168 6.17578 1.5 12 1.5C17.7832 1.5 22.5 6.2168 22.5 12C22.5 12.5742 22.0488 12.9844 21.5156 12.9844C20.9414 12.9844 20.5312 12.5742 20.5312 12C20.5312 7.32422 16.6758 3.46875 12 3.46875ZM6.99609 17.6191C6.62695 17.209 6.62695 16.5938 7.03711 16.2246C7.44727 15.8555 8.0625 15.8555 8.43164 16.2656L11.0156 19.0137V9.04688C11.0156 8.51367 11.4258 8.0625 12 8.0625C12.5332 8.0625 12.9844 8.51367 12.9844 9.04688V19.0137L15.5273 16.2656C15.8965 15.8555 16.5117 15.8555 16.9219 16.2246C17.332 16.5938 17.332 17.209 16.9629 17.6191L12.6973 22.2129C12.5332 22.418 12.2461 22.5 12 22.5C11.7129 22.5 11.4668 22.418 11.2617 22.2129L6.99609 17.6191Z"
-                          fill="currentColor"></path>
-                      </svg></div>
-                  </div>
-                  <div data-btn="clip" class="button__clip-hover"></div>
-                </div>
+            <a class="button nav__main-links w-inline-block" mode="" icon-visibility="no" btn-type="ghost"
+              href="index.html" fs-linkblockedit-element="parent" btn-size="normal" data-btn="wrap" tabindex="link">
+              <div class="button__icon-text-wrapper">
+                <div class="btn-link nav-mobile">Home</div>
+                <div class="button__icon-wrapper"><svg data-wf--icon---new--variant="12px" viewBox="0 0 24 24"
+                    fill="none" class="icon-svg w-variant-e07b6722-35eb-26e3-dfff-2c66315d55f1">
+                    <path
+                      d="M3.469 12A8.525 8.525 0 0 0 12 20.531c.533 0 .984.451.984.985A.972.972 0 0 1 12 22.5C6.176 22.5 1.5 17.824 1.5 12 1.5 6.217 6.176 1.5 12 1.5c.533 0 .984.451.984.984A.972.972 0 0 1 12 3.47c-4.717 0-8.531 3.855-8.531 8.531Zm14.11-4.963 4.593 4.266A.939.939 0 0 1 22.5 12c0 .287-.123.574-.328.738l-4.594 4.266a1.016 1.016 0 0 1-1.394-.041 1.016 1.016 0 0 1 .04-1.395l2.749-2.584H9.047c-.574 0-.985-.41-.985-.984 0-.533.41-.984.985-.984h9.926l-2.748-2.543c-.41-.37-.41-.985-.041-1.395.369-.41.984-.41 1.394-.04Z"
+                      fill="currentColor"></path>
+                  </svg></div>
               </div>
-              <nav class="nav__dropdown-menu br-32 bg-white product w-dropdown-list">
-                <div class="nav__dropdown-top">
-                  <div class="nav__dropdown-column">
-                    <div class="h5">Niches</div>
-                    <div class="spacing-24 desktop"></div>
-                    <div class="spacing-8 tablet-below"></div>
-                    <div class="menu__col-wrapper w-dyn-list">
-                      <div role="list" class="menu__col-list w-dyn-items">
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/pharma-medical"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M9.938 9.465c0 .902-.258 1.762-.731 2.535l-1.719 2.75h8.98L14.75 12c-.473-.773-.688-1.633-.688-2.535V3.063H9.939v6.402Zm6.187-6.402v6.402c0 .515.129 1.031.387 1.46l4.64 7.563c.301.473.473.989.473 1.547 0 1.633-1.375 2.965-3.008 2.965H5.34a2.97 2.97 0 0 1-2.965-2.965c0-.558.129-1.074.43-1.547l4.64-7.562c.258-.43.43-.946.43-1.461V3.063h-.344c-.601 0-1.031-.43-1.031-1.032C6.5 1.473 6.93 1 7.531 1h8.938c.558 0 1.031.473 1.031 1.031 0 .602-.473 1.031-1.031 1.031h-.344Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Pharma & Medical</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/electronics"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M19.2 5.4H4.8c-.337 0-.6.3-.6.6v8.4H2.4V6c0-1.312 1.05-2.4 2.4-2.4h14.4c1.313 0 2.4 1.088 2.4 2.4v8.4h-1.8V6c0-.3-.3-.6-.6-.6ZM3.6 18.6h16.8c.75 0 1.425-.488 1.688-1.2H1.874A1.83 1.83 0 0 0 3.6 18.6ZM0 16.8c0-.637.525-1.2 1.2-1.2h21.6c.637 0 1.2.563 1.2 1.2a3.6 3.6 0 0 1-3.6 3.6H3.6A3.6 3.6 0 0 1 0 16.8Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Electronics</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/automotive"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="m6.709 5.889-.984 2.83h12.51l-.985-2.83c-.246-.657-.861-1.108-1.559-1.108H8.268c-.698 0-1.313.451-1.559 1.108Zm-3.24 3.363 1.394-4.02c.492-1.435 1.887-2.42 3.405-2.42h7.423a3.59 3.59 0 0 1 3.405 2.42l1.435 4.02c1.149.697 1.969 1.969 1.969 3.404v7.547a.972.972 0 0 1-.984.985c-.575 0-.985-.41-.985-.985v-2.297H3.47v2.297a.972.972 0 0 1-.985.985c-.574 0-.984-.41-.984-.985v-7.547c0-1.435.78-2.707 1.969-3.404Zm15.094 1.435H5.438a1.97 1.97 0 0 0-1.97 1.97v3.28h17.063v-3.28c0-1.067-.902-1.97-1.968-1.97ZM6.092 12c.698 0 1.313.615 1.313 1.313 0 .738-.615 1.312-1.312 1.312a1.296 1.296 0 0 1-1.313-1.313c0-.697.574-1.312 1.313-1.312Zm10.5 1.313c0-.698.575-1.313 1.313-1.313.698 0 1.313.615 1.313 1.313 0 .738-.616 1.312-1.313 1.312a1.296 1.296 0 0 1-1.312-1.313Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Automotive</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/apparel-fashion"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M5.48416 3.44442C6.27217 2.76898 7.32285 2.39374 8.37354 2.39374C9.04897 2.39374 9.53679 2.91908 9.64937 3.48195C9.87451 4.57015 10.8126 5.39569 12.0134 5.39569C13.1767 5.39569 14.1523 4.57015 14.3399 3.48195C14.4525 2.91908 14.9403 2.39374 15.6157 2.39374C16.6664 2.39374 17.7171 2.76898 18.5051 3.44442L17.9423 4.15739L18.5051 3.44442L23.2332 7.38448C23.6835 7.75973 23.9462 8.28507 23.9837 8.84794C24.0587 9.4108 23.8711 9.97367 23.4959 10.3864L21.3945 12.788C20.644 13.6511 19.3307 13.7636 18.4676 13.0131L18.0173 12.6379V19.2047C18.0173 20.5556 16.9291 21.6062 15.6157 21.6062H8.41106C7.06018 21.6062 6.0095 20.5556 6.0095 19.2047V12.6379L5.52168 13.0131C4.65862 13.7636 3.34526 13.6511 2.59478 12.788L0.493409 10.3864C0.118165 9.97367 -0.0319327 9.4108 0.00559169 8.84794C0.0431161 8.28507 0.305787 7.75973 0.75608 7.38448L5.48416 3.44442ZM7.96077 4.23243C7.47295 4.30748 7.02266 4.53263 6.64741 4.83282L1.88181 8.77289C1.84429 8.84794 1.80676 8.92299 1.80676 8.99803C1.76924 9.07308 1.80676 9.14813 1.88181 9.22318L1.16885 9.82357L1.88181 9.22318L3.98318 11.6247C4.05823 11.7373 4.24585 11.7373 4.39595 11.6623L6.30969 10.0487C6.57236 9.82357 6.94761 9.78605 7.28533 9.89862C7.58552 10.0487 7.77315 10.3864 7.77315 10.7242L7.81067 19.2047C7.81067 19.5424 8.07334 19.8051 8.41106 19.8051H15.6157C15.9159 19.8051 16.2161 19.5424 16.2161 19.2047V10.7242C16.2161 10.3864 16.4038 10.0487 16.704 9.89862C17.0417 9.78605 17.4169 9.82357 17.6796 10.0487L19.5933 11.6623C19.7434 11.7373 19.9311 11.7373 20.0061 11.6247L22.1075 9.22318C22.1825 9.14813 22.22 9.07308 22.1825 8.99803C22.1825 8.92299 22.145 8.84794 22.1075 8.77289L17.3419 4.83282C16.9666 4.53263 16.5163 4.30748 16.0285 4.23243C15.5032 5.95856 13.8896 7.19686 12.0134 7.19686C10.0997 7.19686 8.48611 5.95856 7.96077 4.23243Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Apparel/Fashion</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/sports"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M13.99 20.326c1.23-.287 2.337-.861 3.321-1.64l-2.173-2.133c-.739 1.025-1.149 2.297-1.149 3.65v.123Zm-1.97.205v-.328c0-1.887.616-3.65 1.723-5.045l-1.723-1.763-5.332 5.332c1.477 1.148 3.323 1.804 5.333 1.804Zm3.118-6.767A8.136 8.136 0 0 1 20.224 12c.082 0 .205.041.328.041V12c0-1.969-.697-3.814-1.846-5.291L13.374 12l1.764 1.764Zm5.168.205h-.082a6.294 6.294 0 0 0-3.692 1.19l2.174 2.173c.738-.984 1.313-2.092 1.6-3.363Zm-8.286-3.322 5.291-5.333c-1.476-1.148-3.322-1.845-5.29-1.845h-.042c0 .123.042.246.042.328a8.136 8.136 0 0 1-1.764 5.086l1.764 1.764Zm-3.157-3.16c.739-1.066 1.19-2.297 1.19-3.691v-.082c-1.272.287-2.38.861-3.364 1.6l2.174 2.173ZM7.468 8.883 5.335 6.709c-.78.984-1.354 2.092-1.64 3.322h.122c1.354 0 2.625-.41 3.65-1.148ZM3.489 12c0 2.01.657 3.855 1.805 5.332L10.626 12l-1.764-1.723C7.468 11.385 5.704 12 3.817 12H3.49Zm8.532 10.5c-3.774 0-7.22-1.969-9.106-5.25-1.887-3.24-1.887-7.219 0-10.5a10.524 10.524 0 0 1 9.106-5.25c3.732 0 7.177 2.01 9.064 5.25 1.887 3.281 1.887 7.26 0 10.5a10.422 10.422 0 0 1-9.065 5.25Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Sports</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/pets"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M9.438 9.264c-1.312.45-2.87-.615-3.444-2.378-.574-1.763 0-3.567 1.353-3.977 1.312-.45 2.87.615 3.444 2.378.573 1.763 0 3.567-1.353 3.977Zm8.937.369c.78-1.312 2.214-1.927 3.239-1.353.984.574 1.189 2.09.41 3.444-.779 1.312-2.214 1.927-3.239 1.353-.984-.574-1.189-2.132-.41-3.444Zm-12.75 0c.779 1.312.574 2.87-.41 3.444-1.025.574-2.46-.041-3.239-1.353-.779-1.353-.574-2.87.41-3.444 1.025-.574 2.46.04 3.239 1.353Zm7.256-4.346c.574-1.763 2.132-2.829 3.444-2.378 1.353.41 1.927 2.214 1.353 3.977-.574 1.763-2.132 2.829-3.444 2.378-1.353-.41-1.927-2.214-1.353-3.977ZM6.2 18.283c-.082.164-.082.37-.082.574 0 .205.123.328.328.328h.123c.082 0 .164 0 .246-.04l2.993-1.19a5.803 5.803 0 0 1 4.386 0l2.993 1.19c.082.04.164.04.246.04h.123c.205 0 .37-.123.37-.328 0-.205-.042-.41-.124-.574-1.845-5.001-4.96-5.657-5.78-5.657-.862 0-3.977.656-5.822 5.657Zm-1.845-.697c2.132-5.74 5.945-6.928 7.667-6.928 1.68 0 5.493 1.189 7.625 6.928.164.41.246.861.246 1.271 0 1.271-1.066 2.337-2.337 2.337h-.123c-.328 0-.656-.082-.984-.205L13.455 19.8a3.965 3.965 0 0 0-2.91 0l-2.993 1.19c-.328.122-.656.204-.984.204h-.123c-1.271 0-2.337-1.066-2.337-2.337 0-.41.082-.86.246-1.27Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Pets</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/beauty-skincare"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="m14.912 5.027 2.338-.902.861-2.297c.041-.205.246-.328.451-.328.165 0 .37.123.41.328l.903 2.297 2.297.902c.205.041.328.246.328.41 0 .206-.123.41-.328.452l-2.297.861-.902 2.338c-.041.164-.246.287-.41.287-.206 0-.41-.123-.452-.287L17.25 6.75l-2.338-.861c-.164-.041-.287-.246-.287-.452 0-.164.123-.369.287-.41ZM1.87 11.344l.697-.287.329-.164h.04l3.61-1.682 1.682-3.65.164-.329.328-.697a.617.617 0 0 1 .574-.41c.246 0 .492.164.615.41l.328.697.123.329.041.04 1.641 3.61 3.65 1.682.329.164.697.328c.246.082.41.328.41.574 0 .246-.164.492-.41.615l-.697.287-.329.164-3.65 1.682-1.682 3.61v.04l-.164.329-.287.697c-.123.246-.369.41-.615.41a.617.617 0 0 1-.574-.41l-.328-.697-.164-.329v-.04l-1.682-3.61-3.61-1.682h-.04l-.329-.164-.697-.287a.677.677 0 0 1-.369-.615c0-.246.123-.492.37-.615Zm3.404.615 2.092.984c.41.164.78.534.985.944l.943 2.091.984-2.091c.205-.41.534-.78.944-.944l2.091-.984-2.091-.984c-.41-.165-.739-.534-.944-.944L9.293 7.94l-.943 2.092c-.205.41-.575.78-.985.944l-2.092.984ZM17.25 17.25l.861-2.297c.041-.205.246-.328.451-.328.165 0 .37.123.41.328l.903 2.297 2.297.902c.205.041.328.246.328.41 0 .206-.123.41-.328.452l-2.297.861-.902 2.338c-.041.164-.246.287-.41.287-.206 0-.41-.123-.452-.287l-.861-2.338-2.338-.861c-.164-.041-.287-.246-.287-.451 0-.165.123-.37.287-.41l2.338-.903Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Beauty/Skincare</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/health-supplements"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M5.28 5.275A2.438 2.438 0 0 0 2.834 7.72V12h4.891V7.72A2.463 2.463 0 0 0 5.28 5.275ZM1 7.72c0-2.33 1.91-4.28 4.28-4.28 2.33 0 4.28 1.95 4.28 4.28v8.56c0 2.369-1.95 4.28-4.28 4.28A4.273 4.273 0 0 1 1 16.28V7.72Zm15.896 11.005c.84 0 1.643-.23 2.292-.65l-5.922-5.922c-.42.65-.65 1.452-.65 2.292 0 2.37 1.91 4.28 4.28 4.28Zm-2.331-7.871 5.923 5.922c.42-.687.687-1.452.687-2.33 0-2.331-1.948-4.28-4.28-4.28-.878 0-1.642.267-2.33.688Zm2.33 9.705a6.082 6.082 0 0 1-5.31-3.057c-1.109-1.872-1.109-4.203 0-6.113 1.108-1.873 3.095-3.057 5.31-3.057 2.179 0 4.166 1.184 5.274 3.057 1.108 1.91 1.108 4.241 0 6.113-1.108 1.91-3.095 3.057-5.273 3.057Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Health & Supplements</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/jewelry"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M12 5.208c-.917 1-2.167 2.875-2.875 5.584a18.233 18.233 0 0 0-1.75-1.167c1.125-3.792 3.292-6.042 4.042-6.708a.822.822 0 0 1 .583-.25.82.82 0 0 1 .583.25c.709.666 2.875 2.916 4 6.708-.583.375-1.208.75-1.75 1.167-.666-2.709-1.958-4.584-2.833-5.584ZM8 20.917c-4.625-1.375-8-5.667-8-10.709 0-.5.375-.875.833-.875 2.542 0 5.042.75 7.167 2.292 1.708 1.25 3.125 2.958 4 4.917.833-1.959 2.25-3.667 4-4.917 2.083-1.542 4.583-2.292 7.125-2.292.5 0 .875.375.875.875 0 5.042-3.375 9.334-8 10.709-.958.25-1.958.416-3 .416h-2c-1.042 0-2.083-.166-3-.416Zm0-2.125c.875.333 1.792.5 2.792.541A10.341 10.341 0 0 0 8 14.208a9.977 9.977 0 0 0-5.958-2.791C2.5 14.833 4.833 17.625 8 18.792Zm8 0c3.125-1.167 5.458-3.959 5.917-7.375-2.292.25-4.375 1.25-5.917 2.791a10.093 10.093 0 0 0-2.833 5.125c1-.041 1.916-.208 2.833-.541Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Jewelry</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/home-garden"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M9.088 5.766a.928.928 0 0 1-.41.615 1.183 1.183 0 0 1-.739.123c-.205-.041-.369-.041-.533-.041a2.293 2.293 0 0 0-2.174 3.035c.123.451-.04.943-.492 1.19a2.403 2.403 0 0 0-1.27 2.132c0 1.395 1.066 2.461 2.46 2.461h5.087V7.734c0-.533.41-.984.984-.984.533 0 .984.451.984.984v7.547h5.086a2.442 2.442 0 0 0 2.461-2.46c0-.903-.533-1.723-1.312-2.133-.451-.247-.616-.739-.451-1.19.04-.246.123-.492.123-.78 0-1.23-1.067-2.296-2.297-2.296-.205 0-.37.04-.534.082-.287.04-.533 0-.779-.123a.928.928 0 0 1-.41-.615C14.543 4.453 13.395 3.469 12 3.469c-1.435 0-2.584.984-2.912 2.297Zm1.928 11.484H5.93a4.411 4.411 0 0 1-4.43-4.43c0-1.394.656-2.666 1.682-3.445-.041-.205-.041-.41-.041-.656a4.262 4.262 0 0 1 4.265-4.266h.082A4.89 4.89 0 0 1 12 1.5c2.01 0 3.732 1.23 4.512 2.953h.082c2.338 0 4.265 1.928 4.265 4.266 0 .246-.04.45-.082.656 1.026.78 1.723 2.05 1.723 3.445 0 2.461-2.01 4.43-4.43 4.43h-5.086v4.266A.972.972 0 0 1 12 22.5c-.574 0-.984-.41-.984-.984V17.25Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Home/Garden</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/services"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M1.5 18.563c0-.534.41-.985.984-.985h2.42c.41-1.312 1.682-2.297 3.159-2.297 1.435 0 2.707.985 3.117 2.297h10.336c.533 0 .984.451.984.985a.972.972 0 0 1-.984.984H11.18a3.262 3.262 0 0 1-3.117 2.297c-1.477 0-2.749-.944-3.159-2.297h-2.42c-.574 0-.984-.41-.984-.985Zm5.25 0c0 .738.574 1.312 1.313 1.312.697 0 1.312-.574 1.312-1.313 0-.697-.615-1.312-1.313-1.312-.738 0-1.312.615-1.312 1.313ZM14.625 12c0 .738.574 1.313 1.313 1.313.697 0 1.312-.575 1.312-1.313 0-.697-.615-1.313-1.313-1.313-.738 0-1.312.616-1.312 1.313Zm1.313-3.281c1.435 0 2.707.984 3.117 2.297h2.46c.534 0 .985.45.985.984a.972.972 0 0 1-.984.984h-2.461a3.262 3.262 0 0 1-3.117 2.297c-1.477 0-2.748-.943-3.159-2.297H2.484c-.574 0-.984-.41-.984-.984 0-.533.41-.984.984-.984H12.78c.41-1.313 1.682-2.297 3.159-2.297ZM9.375 6.75c.697 0 1.313-.574 1.313-1.313 0-.697-.616-1.312-1.313-1.312-.738 0-1.313.615-1.313 1.313 0 .738.575 1.312 1.313 1.312Zm3.117-2.297h9.024c.533 0 .984.451.984.984a.972.972 0 0 1-.984.985h-9.024a3.262 3.262 0 0 1-3.117 2.297c-1.477 0-2.748-.944-3.158-2.297H2.484c-.574 0-.984-.41-.984-.984 0-.534.41-.985.984-.985h3.733c.41-1.312 1.681-2.297 3.158-2.297 1.435 0 2.707.985 3.117 2.297Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Services</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/industries/others"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-brand-secondary"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M19 8.5c0-.93.766-1.75 1.75-1.75.93 0 1.75.82 1.75 1.75 0 .984-.82 1.75-1.75 1.75-.984 0-1.75-.766-1.75-1.75Zm-8.75 0c0-.93.766-1.75 1.75-1.75.93 0 1.75.82 1.75 1.75 0 .984-.82 1.75-1.75 1.75-.984 0-1.75-.766-1.75-1.75Zm-7 1.75c-.984 0-1.75-.766-1.75-1.75 0-.93.766-1.75 1.75-1.75.93 0 1.75.82 1.75 1.75 0 .984-.82 1.75-1.75 1.75ZM19 15.5c0-.93.766-1.75 1.75-1.75.93 0 1.75.82 1.75 1.75 0 .984-.82 1.75-1.75 1.75-.984 0-1.75-.766-1.75-1.75Zm-7 1.75c-.984 0-1.75-.766-1.75-1.75 0-.93.766-1.75 1.75-1.75.93 0 1.75.82 1.75 1.75 0 .984-.82 1.75-1.75 1.75ZM1.5 15.5c0-.93.766-1.75 1.75-1.75.93 0 1.75.82 1.75 1.75 0 .984-.82 1.75-1.75 1.75-.984 0-1.75-.766-1.75-1.75Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Others</div>
-                          </a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="nav-menu__separator"></div>
-                  <div class="nav__dropdown-column">
-                    <div class="h5">Use Cases</div>
-                    <div class="spacing-24"></div>
-                    <div class="menu__col-wrapper w-dyn-list">
-                      <div role="list" class="menu__col-list one-column w-dyn-items">
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="convert-store-visitors.html"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-grey-200"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M.9 2.392h1.69c.825 0 1.576.488 1.914 1.201h15.424c.976 0 1.689.939 1.426 1.914l-1.163 4.316a5.519 5.519 0 0 0-1.576-.225c-.075 0-.15 0-.226.038l1.126-4.241H4.916L6.042 11.4h8.031a6.307 6.307 0 0 0-1.35 1.8H6.38l.225 1.09c.075.412.45.712.863.712h4.616c-.037.413-.075.826-.075 1.201v.6H7.47c-1.277 0-2.403-.9-2.628-2.176L2.89 4.457c-.038-.15-.15-.263-.3-.263H.9c-.525 0-.9-.375-.9-.9a.89.89 0 0 1 .9-.902Zm5.705 19.216a1.797 1.797 0 0 1-1.576-.901c-.338-.526-.338-1.239 0-1.802.338-.525.9-.9 1.576-.9.638 0 1.201.375 1.539.9.338.563.338 1.276 0 1.802-.338.563-.9.9-1.539.9Zm12.01-10.809c1.914 0 3.677 1.05 4.653 2.702.976 1.689.976 3.753 0 5.404a5.36 5.36 0 0 1-4.654 2.703 5.374 5.374 0 0 1-4.69-2.703c-.976-1.65-.976-3.715 0-5.404.975-1.651 2.739-2.702 4.69-2.702Zm-2.552 5.554a.636.636 0 0 0 .863 0l1.088-1.088v3.34c0 .338.263.6.6.6.3 0 .601-.262.601-.6v-3.34l1.05 1.088a.636.636 0 0 0 .864 0 .636.636 0 0 0 0-.863l-2.102-2.101a.636.636 0 0 0-.863 0l-2.102 2.101a.636.636 0 0 0 0 .863Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Convert store visitors</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="automate-support.html"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-grey-200"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M10.2 16.194v2.4l2.7-2.025.487-.375H18c.3 0 .6-.262.6-.6v-10.8c0-.3-.3-.6-.6-.6H6c-.338 0-.6.3-.6.6v10.8c0 .338.262.6.6.6h4.2Zm-6.6-6H2.212c-.187.375-.6.6-1.012.6-.675 0-1.2-.525-1.2-1.2 0-.637.525-1.2 1.2-1.2.413 0 .825.263 1.012.6H3.6v-4.2c0-1.312 1.05-2.4 2.4-2.4h12c1.313 0 2.4 1.088 2.4 2.4v4.2h1.35c.188-.337.6-.6 1.05-.6.637 0 1.2.563 1.2 1.2 0 .675-.563 1.2-1.2 1.2-.45 0-.863-.225-1.05-.6H20.4v5.4c0 1.35-1.087 2.4-2.4 2.4h-4.012l-3.788 2.85-.037.038-.188.112-.637.488c-.188.15-.413.15-.638.075-.188-.113-.3-.3-.3-.563v-3H6a2.37 2.37 0 0 1-2.4-2.4v-5.4Zm3-3c0-.637.525-1.2 1.2-1.2h8.4c.637 0 1.2.563 1.2 1.2v4.8c0 .675-.563 1.2-1.2 1.2H7.8c-.675 0-1.2-.525-1.2-1.2v-4.8Zm1.2 2.4c0 .675.525 1.2 1.2 1.2.637 0 1.2-.525 1.2-1.2 0-.637-.563-1.2-1.2-1.2-.675 0-1.2.563-1.2 1.2Zm7.2-1.2c-.675 0-1.2.563-1.2 1.2 0 .675.525 1.2 1.2 1.2.637 0 1.2-.525 1.2-1.2 0-.637-.563-1.2-1.2-1.2Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Automate support</div>
-                          </a></div>
-                        <div role="listitem" class="menu__col-item w-dyn-item"><a href="/use-cases/actionable-insights"
-                            class="menu__link w-inline-block">
-                            <div class="menu__link-icon bg-grey-200"><svg data-wf--icon---new--variant="16px"
-                                viewBox="0 0 24 24" fill="none"
-                                class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
-                                <path
-                                  d="M3.063 10.625c0 1.848.601 3.48 1.675 4.813.602.687 1.074 1.632 1.074 2.707v3.824c0 .601-.472 1.031-1.03 1.031-.602 0-1.032-.43-1.032-1.031v-3.825c0-.472-.215-.945-.602-1.417C1.773 15.05 1 12.945 1 10.625 1 5.34 5.297 1 10.625 1h1.031c3.352 0 6.489 2.063 7.864 5.027l.515 1.16.043.13c.172.43.387.859.559 1.245.386.817.816 1.504 1.375 2.02l.172.215c.515.515.816 1.203.816 1.933 0 1.504-1.246 2.707-2.75 2.707V17.5a2.742 2.742 0 0 1-2.75 2.75h-2.75v1.719c0 .601-.473 1.031-1.031 1.031-.602 0-1.031-.43-1.031-1.031v-2.75c0-.559.43-1.032 1.03-1.032H17.5c.344 0 .688-.3.688-.687v-3.094c0-.558.43-1.031 1.03-1.031h1.032c.387 0 .688-.3.688-.645a.69.69 0 0 0-.215-.472l-.172-.215c-.817-.773-1.332-1.676-1.762-2.578-.215-.43-.43-.902-.602-1.332l-.043-.13a27.874 27.874 0 0 0-.515-1.116c-1.031-2.235-3.395-3.824-5.973-3.824h-1.031a7.546 7.546 0 0 0-7.563 7.562Zm12.374-1.203-.128.086c-.387.215-.602.687-.602 1.117 0 .473.215.902.602 1.16l.129.043c.257.172.386.516.3.774-.086.257-.215.472-.343.687l-.086.172c-.13.258-.258.43-.43.644a.609.609 0 0 1-.816.13l-.13-.087c-.386-.214-.859-.171-1.288.086-.387.215-.688.602-.688 1.075v.129c0 .3-.215.601-.516.644-.257.043-.558.043-.859.043-.258 0-.559 0-.86-.043-.3-.043-.515-.344-.515-.645v-.128c0-.473-.3-.86-.687-1.075-.387-.257-.86-.3-1.247-.086l-.128.086c-.301.172-.645.13-.817-.129a3.367 3.367 0 0 1-.43-.644l-.128-.172a4.337 4.337 0 0 1-.301-.644.583.583 0 0 1 .3-.774l.13-.086c.386-.215.558-.687.558-1.16 0-.43-.172-.902-.559-1.117l-.128-.086a.583.583 0 0 1-.301-.774c.086-.214.215-.43.3-.687l.13-.129c.128-.258.257-.43.43-.644.171-.258.558-.301.816-.13l.128.087c.387.214.86.171 1.247-.086.43-.215.687-.602.687-1.075v-.129c0-.3.215-.601.559-.644.257-.043.558-.086.816-.086.3 0 .602.043.86.086.343.043.515.344.515.644v.13c0 .472.3.859.73 1.074.387.257.86.3 1.247.086l.129-.086a.609.609 0 0 1 .816.128c.172.215.3.387.43.602l.129.172c.085.258.214.473.3.687.13.301-.043.645-.3.774Zm-6.53 1.203c0 .645.3 1.203.859 1.504.515.3 1.16.3 1.718 0 .516-.3.86-.86.86-1.504 0-.602-.344-1.16-.86-1.46-.558-.302-1.203-.302-1.718 0-.559.3-.86.858-.86 1.46Z"
-                                  fill="currentColor"></path>
-                              </svg></div>
-                            <div class="p-leading">Actionable insights</div>
-                          </a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="spacing-32 desktop"></div>
-                <div class="nav__dropdown-bottom desktop"><a data-btn="wrap" href="/demo"
-                    class="nav__simulator-link bg-brand-secondary-light br-pill w-inline-block">
-                    <div class="h5">Simulation</div>
-                    <div class="p-small">/</div>
-                    <p class="p-small">Check how Zipchat AI would work on your brand without starting a Trial</p>
-                    <div class="simulator__icon"><svg data-wf--icon---new--variant="20px" viewBox="0 0 24 24"
-                        fill="none" class="icon-svg">
-                        <path
-                          d="M21.6429 12.7742L13.7857 20.2067C13.3393 20.6049 12.6696 20.6049 12.2679 20.1624C11.8661 19.72 11.8661 19.0564 12.3125 18.6583L18.25 13.0397H3.07143C2.44643 13.0397 2 12.5973 2 11.9779C2 11.4027 2.44643 10.9161 3.07143 10.9161H18.25L12.3125 5.34175C11.8661 4.94358 11.8661 4.23572 12.2679 3.83756C12.6696 3.39515 13.3839 3.39515 13.7857 3.79331L21.6429 11.2258C21.8661 11.447 22 11.7124 22 11.9779C22 12.2876 21.8661 12.553 21.6429 12.7742Z"
-                          fill="currentColor"></path>
-                      </svg></div>
-                  </a></div>
-              </nav>
-            </div>
+              <div data-btn="clip" class="button__clip-hover"></div>
+            </a>
             <div data-hover="false" data-delay="0" class="nav__dropdown w-dropdown">
               <div class="nav__dropdown-toggle w-dropdown-toggle">
                 <div data-btn="wrap" btn-size="normal" btn-type="ghost" fs-linkblockedit-element="parent"
-                  tabindex="link" mode="" icon-visibility="yes" class="button nav__main-links default-cursor">
+                  tabindex="link" mode="" icon-visibility="yes" class="button nav__main-links default-cursor active">
                   <div class="button__icon-text-wrapper"><a href="#"
                       class="btn-link nav-mobile default-cursor">Features</a>
                     <div class="button__icon-wrapper transition bg-grey-100"><svg data-wf--icon---new--variant="12px"
@@ -2156,10 +1959,9 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/3zvr1yZSmhjCz1.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/knowledge.png" alt="">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2221,10 +2023,9 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/AhUXFUrfdp5YpE.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/live.png" alt="">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2285,10 +2086,9 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/BZasidkXJ1UaH6.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/data.png" alt="">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2349,10 +2149,9 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/96r8yknkAubioY.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/sales_tracking.png" alt="">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2413,10 +2212,9 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/DJAr7GgY2zWnSZ.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/chat_instructions.png" alt="">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2477,10 +2275,11 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/6kMuFVoy8hg8zN.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/mobile_img.png" alt="">
+                                      <!-- <lottie-player src="https://cdn.lottielab.com/l/6kMuFVoy8hg8zN.json" muted=""
+                                        data-wf-ignore="true" data-object-fit="cover"></lottie-player> -->
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2541,10 +2340,9 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/Au24abnUtJif9N.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/corrections.png" alt="">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2604,10 +2402,9 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/CyxwwPY5Q4dyKn.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/lead.png" alt="">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2668,10 +2465,9 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/AHWsqktTVfWzcr.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/mobile_brand.png" alt="">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2732,10 +2528,9 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/CJ3hESJK3Kq26E.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/mobile_group.png" alt="">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2796,10 +2591,9 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/8uKGQhitWvrbah.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/customization.png" alt="">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -2860,10 +2654,9 @@
                               <div class="positions-swiper__right">
                                 <div class="positions__visual-width">
                                   <div class="positions__visual-height features">
-                                    <div class="leaders_lottie w-embed"><lottie-player
-                                        src="https://cdn.lottielab.com/l/AuNf3Fa5yCCASG.json" muted=""
-                                        data-wf-ignore="true" data-object-fit="cover">
-                                      </lottie-player></div>
+                                    <div class="leaders_lottie w-embed">
+                                      <img src="../images/languages.png" alt="">
+                                    </div>
                                   </div>
                                 </div>
                               </div>
