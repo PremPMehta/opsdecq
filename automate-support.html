@@ -21,6 +21,7 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/zipchat.webflow.shared.316a4ca9e.min.css" rel="stylesheet" type="text/css">
   <link href="css/zipchat.webflow.66bf26225eb4ee22120c70b9-e8773adc3.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" async="" src="js/insight.min.js"></script>
   <script async="" src="js/gtm.js"></script>
   <script
@@ -47,6 +48,7 @@
             font-size: 50px !important;
           }
         }
+
         .copy_write {
           width: 100%;
           display: flex;
@@ -55,7 +57,7 @@
           align-items: center;
           padding: 10px 0;
         }
-        
+
         .copy_write .left {
           text-align: left;
           width: 50%;
@@ -65,22 +67,26 @@
           text-align: right;
           width: 50%;
         }
-@media screen and (max-width: 991px) {
+
+        @media screen and (max-width: 991px) {
           .copy_write {
             flex-direction: column;
             text-align: center;
             align-items: center;
             gap: 10px;
           }
+
           .copy_write .left {
             width: 100%;
             text-align: center;
           }
+
           .copy_write .right {
             width: 100%;
             text-align: center;
           }
         }
+
         .blog__table-list .blog__table-item-wrap:first-child .blog__table-item {
           padding-top: 0rem;
         }
@@ -406,7 +412,7 @@
           /* Navigation Scrolled */
           .navigation.scrolled {
             background-color: transparent;
-            margin-top: 1rem;
+            margin-top: 2rem;
           }
 
           .navigation.scrolled .container-medium.nav {
@@ -421,9 +427,9 @@
             width: 0px;
           }
 
-          .navigation.scrolled .nav__links-wrapper {
+          /* .navigation.scrolled .nav__links-wrapper {
             transform: translate(-5.5rem, 0);
-          }
+          } */
         }
 
         /* Mobile */
@@ -609,13 +615,11 @@
       <div class="container-medium nav">
         <div class="nav__parent">
           <div class="nav__logo">
-            <!-- <a href="/" class="nav__logo-link w-inline-block"><img
-                src="images/66fac20ef7c81ad91ca5fb46_logo.svg" loading="lazy" alt="Zipchat Pictogram"
-                class="icon-embed logo-mark">
-              <div class="logo-mark__mask"><img src="images/66fd4200b24ed17b306460ec_logo%20text.svg" loading="lazy"
-                  alt="Zipchat AI Logo
-" class="icon-embed logo-text"></div>
-            </a> -->
+            <a href="/" aria-current="page" class="nav__logo-link w-inline-block w--current">
+              <img src="images/new_logo.png" loading="lazy" alt="OpsdecqPictogram" class="icon-embed logo-mark">
+              <!-- <div class="logo-mark__mask"><img src="images/new_logo.png" loading="lazy"
+                  alt="Opsdecq AI Logo" class="icon-embed logo-text"></div> -->
+            </a>
           </div>
           <nav role="navigation" class="nav__links-wrapper br-32 w-nav-menu">
             <div class="nav-links__child">
@@ -821,7 +825,7 @@
                               <div class="p-leading">Convert store visitors</div>
                             </a></div>
                           <div role="listitem" class="menu__col-item w-dyn-item"><a href="automate-support.html"
-                              aria-current="page" class="menu__link w-inline-block w--current">
+                              class="menu__link w-inline-block">
                               <div class="menu__link-icon bg-grey-200"><svg data-wf--icon---new--variant="16px"
                                   viewBox="0 0 24 24" fill="none"
                                   class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
@@ -1078,8 +1082,7 @@
                         fill="currentColor"></path>
                     </svg></div>
                 </a>
-                <div class="mobile-menu__main-btns"><a icon-visibility="yes" tabindex="link"
-                    href="" target="_blank"
+                <div class="mobile-menu__main-btns"><a icon-visibility="yes" tabindex="link" href="" target="_blank"
                     class="button__icon-only bg-grey-100 tablet-below w-inline-block"><svg
                       data-wf--icon---new--variant="16px" viewBox="0 0 24 24" fill="none"
                       class="icon-svg w-variant-9b083e29-013a-45ae-8c53-497c77d809f0">
@@ -1089,9 +1092,8 @@
                     </svg></a>
                   <div class="button" mode="" icon-visibility="no" btn-type="secondary"
                     fs-linkblockedit-element="parent" target="" btn-size="normal" data-btn="wrap" tabindex="link">
-                    <div class="button__icon-text-wrapper"><a target="_blank"
-                        href=""
-                        class="btn-link">Start free trial</a>
+                    <div class="button__icon-text-wrapper"><a target="_blank" href="" class="btn-link">Start free
+                        trial</a>
                       <div class="button__icon-wrapper"></div>
                     </div>
                     <div data-btn="clip" class="button__clip-hover"></div>
@@ -1112,9 +1114,7 @@
             </a>
             <div data-btn="wrap" btn-size="normal" fs-linkblockedit-element="parent" tabindex="link" class="button nav">
               <div class="button__icon-text-wrapper"><a data-optibase-click-conversion-id="start_free_trialbook_a_demo"
-                  href=""
-                  target="_blank" class="btn-link desktop-landscape">Start free trial</a><a
-                  href=""
+                  href="" target="_blank" class="btn-link desktop-landscape">Start free trial</a><a href=""
                   target="_blank" class="btn-link text-white mobile">Sign up</a></div>
               <div data-btn="clip" class="button__clip-hover"></div>
             </div>
@@ -1157,7 +1157,7 @@
           }
 
           .navigation.scrolled .nav__dropdown-menu.features {
-            margin-left: -4rem;
+            margin-left: -21rem;
           }
 
           .navigation.scrolled .nav__dropdown-menu.product {
@@ -1237,17 +1237,16 @@
                   <div tabindex="link" btn-size="large" fs-linkblockedit-element="parent"
                     data-w-id="0c6a7086-687b-5cbd-f214-ecd297a2219d" class="button animated">
                     <div class="button__icon-text-wrapper"><a
-                        data-optibase-click-conversion-id="start_free_trialbook_a_demo"
-                        href=""
-                        target="_blank" class="btn-link">Start free trial</a>
+                        data-optibase-click-conversion-id="start_free_trialbook_a_demo" href="" target="_blank"
+                        class="btn-link">Start free trial</a>
                       <div class="button__icon-wrapper"></div>
                     </div>
                   </div>
                   <div tabindex="link" btn-size="large" fs-linkblockedit-element="parent"
                     data-w-id="0c6a7086-687b-5cbd-f214-ecd297a221a2" class="button animated">
                     <div class="button__icon-text-wrapper"><a
-                        data-optibase-click-conversion-id="start_free_trialbook_a_demo" href=""
-                        class="btn-link">Book a demo</a>
+                        data-optibase-click-conversion-id="start_free_trialbook_a_demo" href="" class="btn-link">Book a
+                        demo</a>
                       <div class="button__icon-wrapper"></div>
                     </div>
                   </div>
@@ -1268,11 +1267,11 @@
             </div>
           </div>
           <div class="spacing-96"></div>
-          <div class="bg__shape-wrapper use-cases"><img src="images/66c5a826013f258241fadb44_bg-half-shape-left.avif"
+          <div class="bg__shape-wrapper use-cases"><img src="images/shape_4.png"
               loading="lazy" alt="" class="img-full cover"></div>
-          <div class="bg__shape-wrapper use-cases two"><img src="images/66c74310b34b0b21a45478d9_bg-simulator.avif"
+          <div class="bg__shape-wrapper use-cases two"><img src="images/shape_6.png"
               loading="lazy" sizes="(max-width: 1065px) 100vw, 1065px"
-              srcset="images/66c74310b34b0b21a45478d9_bg-simulator-p-500.avif 500w, images/66c74310b34b0b21a45478d9_bg-simulator.avif 1065w"
+              srcset="images/shape_6.png 500w, images/shape_6.png 1065w"
               alt="" class="img-full contain"></div>
         </div>
         <div class="spacing-120"></div>
@@ -2149,7 +2148,7 @@
             </div>
           </div>
           <div class="spacing-80 desktop"></div>
-          <div class="tabs__gradient"><img src="images/66cc98a006eb4c1586faea5f_2%20%252B%209%20%252B%2011.avif"
+          <div class="tabs__gradient"><img src="images/shade_5.png"
               loading="lazy" alt="" class="img-full contain right-aligned"></div>
         </div>
       </div>
@@ -2168,9 +2167,8 @@
               <div tabindex="link" btn-size="large" fs-linkblockedit-element="parent"
                 data-w-id="0c6a7086-687b-5cbd-f214-ecd297a2219d" class="button animated">
                 <div class="button__icon-text-wrapper"><a
-                    data-optibase-click-conversion-id="start_free_trialbook_a_demo"
-                    href=""
-                    target="_blank" class="btn-link">Start free trial</a>
+                    data-optibase-click-conversion-id="start_free_trialbook_a_demo" href="" target="_blank"
+                    class="btn-link">Start free trial</a>
                   <div class="button__icon-wrapper"></div>
                 </div>
               </div>
@@ -2186,12 +2184,9 @@
             </div>
           </div>
           <div class="spacing-96"></div>
-          <div class="cta__visual-one"><img src="images/66faaf28a818e7161f455a39_cta%201.1.avif" loading="lazy"
-              sizes="(max-width: 662px) 100vw, 662px"
-              srcset="images/66faaf28a818e7161f455a39_cta%201.1-p-500.png 500w, images/66faaf28a818e7161f455a39_cta%201.1.avif 662w"
-              alt="" class="img-full cover"></div>
-          <div class="cta__visual-two"><img src="images/66faae37dd817ebdf51357b6_cta%20v2.avif" loading="lazy" alt=""
-              class="img-full cover"></div>
+          <div class="cta__visual-one"><img src="images/shape_2.png" loading="lazy" sizes="100vw"
+              srcset="images/shape_2.png-p-500.png 500w, images/shape_2.png 662w" alt="" class="img-full cover"></div>
+          <div class="cta__visual-two"><img src="images/shape_1.png" loading="lazy" alt="" class="img-full cover"></div>
         </div>
       </div>
     </section>
@@ -2202,7 +2197,7 @@
       <h1 class="text-center footer-text" style="letter-spacing: 10px; font-size: 100px;">Opsdecq</h1>
       <div class="spacing-96"></div>
       <div class="copy_write">
-        <span class="left">Copyright 2025 © Opsdecq All rights reserved.</span>
+        <span class="left">Copyright 2026 © Opsdecq All rights reserved.</span>
         <span class="right">Hand crafted & made with <span class="heart">❤️</span> by infoloop.</span>
       </div>
       <div class="spacing-16"></div>

@@ -77,7 +77,7 @@
     --size--size-32: 2rem;
     --size--size-8: .5rem;
     --size--size-24: 1.5rem;
-    --colors--gray--100: #f3f4f6;
+    --colors--gray--100: #f6f9ff;
     --container--small: 1280px;
     --container--large: 1856px;
     --colors--main--background: var(--colors--main--white);
@@ -126,8 +126,8 @@
     --colors--main--brand-light: var(--colors--purple--200);
     --colors--main--brand-secondary-dark: #048a01;
     --colors--main--brand-secondary-light: var(--colors--green--100);
-    --colors--green--400: #b8fd33;
-    --colors--green--100: #e9ffc5;
+    --colors--green--400: #88dbff;
+    --colors--green--100: #e9f0ff;
     --colors--red--100: #fee2e2;
     --colors--emerald--200: #a7f3d0;
     --colors--emerald--300: #6ee7b7;
@@ -144,9 +144,9 @@
     --colors--light-blue--200: #bed9ff;
     --colors--light-blue--100: #e0f2fe;
     --colors--purple--800: #5b21b6;
-    --colors--purple--400: #a78bfa;
-    --colors--purple--200: #ddd6fe;
-    --colors--purple--100: #ede9fe;
+    --colors--purple--400: #0090CF;
+    --colors--purple--200: #d6f0fe;
+    --colors--purple--100: #f6f9ff;
     --colors--purple--50: #f5f3ff;
     --container--global-inner-tablet-below: var(--size--size-24);
     --size--size-16: 1rem;
@@ -157,7 +157,7 @@
     --color-mode--button-background: var(--colors--main--brand-primary);
     --button--secondary-border-hover: var(--colors--main--transparent);
     --button--ghost-background: var(--colors--main--transparent);
-    --_colors---neutral-200: #f3f4f6;
+    --_colors---neutral-200: #f6f9ff;
     --_colors---white: white;
     --_font-family---heading-family: "Tt Firs Neue", Arial, sans-serif;
     --_headings-styles---font-size: var(--_text-responsive-sizes---heading-medium--font-size);
@@ -166,7 +166,7 @@
     --_headings-styles---letter-spacing: var(--_text-responsive-sizes---heading-medium--letter-spacing);
     --_colors---neutral-100: #f9fafb;
     --_colors---neutral-1000: #111827;
-    --_colors---accent-500: #b8fd33;
+    --_colors---accent-500: #88dbff;
     --_text-responsive-sizes---body-large--font-size: 1.125rem;
     --_text-responsive-sizes---body-large--line-height: 1.44em;
     --_bodies-styles---emphasis-font-weight: 500;
@@ -174,7 +174,7 @@
     --_text-responsive-sizes---body-medium--font-size: 1rem;
     --_text-responsive-sizes---body-medium--line-height: 1.44em;
     --_text-responsive-sizes---body-medium--letter-spacing: 0rem;
-    --_colors---accent-300: #e9ffc5;
+    --_colors---accent-300: #e9f0ff;
     --_colors---neutral-700: #4b5563;
     --_font-family---caption-family: "Tt Firs Neue", Arial, sans-serif;
     --_captions-styles---font-size: var(--_text-responsive-sizes---caption-large--font-size);
@@ -190,8 +190,8 @@
     --_titles-styles---font-size: var(--_text-responsive-sizes---title-medium--font-size);
     --_titles-styles---line-height: var(--_text-responsive-sizes---title-medium--line-height);
     --_titles-styles---font-weight: 500;
-    --_colors---brand-500: #a78bfa;
-    --_colors---brand-300: #ddd6fe;
+    --_colors---brand-500: #0090CF;
+    --_colors---brand-300: #d6f0fe;
     --_colors---brand-700: #3730a3;
     --_colors---accent-700: #048a01;
     --_colors---neutral-900: #1f2937;
@@ -1098,7 +1098,21 @@ blockquote {
     position: relative;
     inset: 0% 0% auto
 }
-
+@media screen and (max-width: 1400px) {
+    .shapes__home-hero {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .shapes__home-hero {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .shapes__home-hero {
+        width: 65%;
+    }
+}
 .shape-left {
     width: 50%;
     height: 6rem;
@@ -1318,11 +1332,15 @@ blockquote {
     flex: none;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 39px;
+    width: 100%;
+    height: 40px;
     display: flex
 }
-
+@media screen and (max-width: 991px) {
+    .icon-embed.logo-mark {
+        height: 30px
+    }
+}
 .nav-mobile__btns-wrap {
     display: none
 }
@@ -1362,7 +1380,8 @@ blockquote {
 
 .hamburger__menu {
     pointer-events: auto;
-    display: none
+    display: none;
+    cursor:pointer;
 }
 
 .navigation {
@@ -3116,7 +3135,7 @@ blockquote {
 
 .agentic__animation-wrap {
     border: 4px solid var(--colors--main--white);
-    background-color: #f3f4f6f5;
+    background-color: #f6f9fff5;
     border-radius: 1rem;
     width: 75%;
     height: 24rem;
@@ -6303,8 +6322,8 @@ blockquote {
     }
 
     .icon-embed.logo-mark {
-        width: 20px;
-        height: 23px
+        /* width: 20px; */
+        height: 22px
     }
 
     .nav__logo-link {
