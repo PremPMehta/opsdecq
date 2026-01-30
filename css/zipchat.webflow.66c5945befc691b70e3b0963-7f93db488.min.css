@@ -1014,21 +1014,25 @@ blockquote {
     position: relative;
     inset: 0% 0% auto
 }
+
 @media screen and (max-width: 1400px) {
     .shapes__home-hero {
         width: 50%;
     }
 }
+
 @media screen and (max-width: 1100px) {
     .shapes__home-hero {
         width: 40%;
     }
 }
+
 @media screen and (max-width: 991px) {
     .shapes__home-hero {
         width: 65%;
     }
 }
+
 .shape-left {
     width: 50%;
     height: 6rem;
@@ -1069,6 +1073,13 @@ blockquote {
     width: 50%;
     height: 6rem;
     position: relative
+}
+
+@media screen and (max-width: 600px) {
+    .shape-right {
+        width: 70%;
+        height: 5rem;
+    }
 }
 
 .shape-right.bg-grey-100.br-40 {
@@ -1158,11 +1169,13 @@ blockquote {
     height: 40px;
     display: flex
 }
+
 @media screen and (max-width: 991px) {
     .icon-embed.logo-mark {
         height: 30px
     }
 }
+
 .nav-mobile__btns-wrap {
     display: none
 }
@@ -1203,7 +1216,7 @@ blockquote {
 .hamburger__menu {
     pointer-events: auto;
     display: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .navigation {
