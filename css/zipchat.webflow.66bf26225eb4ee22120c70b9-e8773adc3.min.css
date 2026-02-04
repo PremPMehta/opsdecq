@@ -807,7 +807,13 @@ blockquote {
 .img-full.contain.top-aligned.smallest.cr {
     margin-top: 48px
 }
+.spacing-16 {
+    height: var(--spacing-block--spacing-16)
+}
 
+.spacing-16.em-unit {
+    height: 1em
+}
 .img-full.contain.top-aligned.languages {
     width: 50%;
     height: 50%;
@@ -1733,7 +1739,7 @@ blockquote {
     z-index: 0;
     z-index: 0;
     z-index: 0;
-    margin-top: -2.5rem;
+    margin-top: -1.5rem;
     position: sticky;
     bottom: 0
 }
@@ -2392,9 +2398,13 @@ blockquote {
     width: 100%;
     height: 100%;
     position: absolute;
-    inset: 0%
+    inset: 0%;
+    display: flex;
+    align-items: center;
 }
-
+.leaders_lottie img {
+    width: 90%;
+}
 .js__slider-lotties {
     display: none
 }
@@ -3541,7 +3551,6 @@ blockquote {
         grid-row-gap: var(--spacing-block--spacing-12);
         justify-content: flex-start;
         align-items: center;
-        margin-top: 1.5rem;
         display: flex
     }
 

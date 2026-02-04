@@ -1457,7 +1457,7 @@ blockquote {
     z-index: 0;
     z-index: 0;
     z-index: 0;
-    margin-top: -2.5rem;
+    margin-top: -1.5rem;
     position: sticky;
     bottom: 0
 }
@@ -3267,7 +3267,6 @@ blockquote {
         grid-row-gap: var(--spacing-block--spacing-12);
         justify-content: flex-start;
         align-items: center;
-        margin-top: 1.5rem;
         display: flex
     }
 
