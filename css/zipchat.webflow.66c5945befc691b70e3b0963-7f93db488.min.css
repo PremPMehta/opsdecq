@@ -807,6 +807,7 @@ blockquote {
     height: var(--spacing-block--spacing-24);
     flex: none
 }
+
 .spacing-16 {
     height: var(--spacing-block--spacing-16)
 }
@@ -814,6 +815,7 @@ blockquote {
 .spacing-16.em-unit {
     height: 1em
 }
+
 .spacing-24.tablet-below {
     display: none
 }
@@ -2258,9 +2260,11 @@ blockquote {
     display: flex;
     align-items: center;
 }
+
 .leaders_lottie img {
     width: 90%;
 }
+
 .tabs__gradient {
     pointer-events: none;
     position: absolute;
@@ -2575,8 +2579,8 @@ blockquote {
     }
 
     .button.nav {
-        background-color: var(--button--secondary-background);
-        color: var(--colors--main--text-primary)
+        background-color: var(--colors--gray--800);
+        color: var(--colors--main--white);
     }
 
     .button.nav__main-links {
@@ -2676,10 +2680,6 @@ blockquote {
 
     .hidden-tablet {
         display: none
-    }
-
-    .btn-link.text-white.mobile {
-        color: var(--button--secondary-text)
     }
 
     .btn-link.nav-mobile {

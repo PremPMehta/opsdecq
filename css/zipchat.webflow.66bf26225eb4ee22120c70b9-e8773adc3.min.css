@@ -807,6 +807,7 @@ blockquote {
 .img-full.contain.top-aligned.smallest.cr {
     margin-top: 48px
 }
+
 .spacing-16 {
     height: var(--spacing-block--spacing-16)
 }
@@ -814,6 +815,7 @@ blockquote {
 .spacing-16.em-unit {
     height: 1em
 }
+
 .img-full.contain.top-aligned.languages {
     width: 50%;
     height: 50%;
@@ -1042,21 +1044,25 @@ blockquote {
     position: relative;
     inset: 0% 0% auto
 }
+
 @media screen and (max-width: 1400px) {
     .shapes__home-hero {
         width: 50%;
     }
 }
+
 @media screen and (max-width: 1100px) {
     .shapes__home-hero {
         width: 40%;
     }
 }
+
 @media screen and (max-width: 991px) {
     .shapes__home-hero {
         width: 65%;
     }
 }
+
 .shape-left {
     width: 50%;
     height: 6rem;
@@ -1186,11 +1192,13 @@ blockquote {
     height: 40px;
     display: flex
 }
+
 @media screen and (max-width: 991px) {
     .icon-embed.logo-mark {
         height: 30px
     }
 }
+
 .nav-mobile__btns-wrap {
     display: none
 }
@@ -1231,7 +1239,7 @@ blockquote {
 .hamburger__menu {
     pointer-events: auto;
     display: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .navigation {
@@ -2402,9 +2410,11 @@ blockquote {
     display: flex;
     align-items: center;
 }
+
 .leaders_lottie img {
     width: 90%;
 }
+
 .js__slider-lotties {
     display: none
 }
@@ -2723,8 +2733,8 @@ blockquote {
     }
 
     .button.nav {
-        background-color: var(--button--secondary-background);
-        color: var(--colors--main--text-primary)
+        background-color: var(--colors--gray--800);
+        color: var(--colors--main--white);
     }
 
     .button.nav__main-links {
@@ -2824,10 +2834,6 @@ blockquote {
 
     .hidden-tablet {
         display: none
-    }
-
-    .btn-link.text-white.mobile {
-        color: var(--button--secondary-text)
     }
 
     .btn-link.nav-mobile {
