@@ -617,7 +617,33 @@
 
         /* Navigation wrapper */
         .positions-nav {
-          display: none;
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          top: 12px;
+          left: 19px;
+          right: -18px;
+          /* padding: 0 12px; */
+          /* transform: translateY(-50%); */
+          pointer-events: none;
+          z-index: 10;
+        }
+
+        .positions-prev,
+        .positions-next {
+          pointer-events: auto;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: rgb(70 198 255);
+          color: #fff;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          user-select: none;
+          backdrop-filter: blur(6px);
         }
 
         /* Mobile only */
@@ -633,23 +659,6 @@
             /* transform: translateY(-50%); */
             pointer-events: none;
             z-index: 10;
-          }
-
-          .positions-prev,
-          .positions-next {
-            pointer-events: auto;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background: rgb(70 198 255);
-            color: #fff;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            user-select: none;
-            backdrop-filter: blur(6px);
           }
         }
 
@@ -1826,8 +1835,7 @@
                               </div>
                             </div>
                           </div>
-                          <div id="Task_board" role="listitem"
-                            class="swiper-slide positions-content w-dyn-item">
+                          <div id="Task_board" role="listitem" class="swiper-slide positions-content w-dyn-item">
                             <div class="swiper-slide__item position-content u-grid-autofit">
                               <div id="w-node-_34e61ccc-8d72-6196-048c-6fca7be68aa0-0e3b0963"
                                 class="positions-swiper__left">
@@ -1887,8 +1895,7 @@
                               </div>
                             </div>
                           </div>
-                          <div id="calendar" role="listitem"
-                            class="swiper-slide positions-content w-dyn-item">
+                          <div id="calendar" role="listitem" class="swiper-slide positions-content w-dyn-item">
                             <div class="swiper-slide__item position-content u-grid-autofit">
                               <div id="w-node-_34e61ccc-8d72-6196-048c-6fca7be68aa0-0e3b0963"
                                 class="positions-swiper__left">
@@ -1948,8 +1955,7 @@
                               </div>
                             </div>
                           </div>
-                          <div id="task_list" role="listitem"
-                            class="swiper-slide positions-content w-dyn-item">
+                          <div id="task_list" role="listitem" class="swiper-slide positions-content w-dyn-item">
                             <div class="swiper-slide__item position-content u-grid-autofit">
                               <div id="w-node-_34e61ccc-8d72-6196-048c-6fca7be68aa0-0e3b0963"
                                 class="positions-swiper__left">
@@ -2009,8 +2015,7 @@
                               </div>
                             </div>
                           </div>
-                          <div id="real_time" role="listitem"
-                            class="swiper-slide positions-content w-dyn-item">
+                          <div id="real_time" role="listitem" class="swiper-slide positions-content w-dyn-item">
                             <div class="swiper-slide__item position-content u-grid-autofit">
                               <div id="w-node-_34e61ccc-8d72-6196-048c-6fca7be68aa0-0e3b0963"
                                 class="positions-swiper__left">
@@ -2072,8 +2077,7 @@
                               </div>
                             </div>
                           </div>
-                          <div id="create_task" role="listitem"
-                            class="swiper-slide positions-content w-dyn-item">
+                          <div id="create_task" role="listitem" class="swiper-slide positions-content w-dyn-item">
                             <div class="swiper-slide__item position-content u-grid-autofit">
                               <div id="w-node-_34e61ccc-8d72-6196-048c-6fca7be68aa0-0e3b0963"
                                 class="positions-swiper__left">
@@ -2194,8 +2198,7 @@
                               </div>
                             </div>
                           </div>
-                          <div id="subtask" role="listitem"
-                            class="swiper-slide positions-content w-dyn-item">
+                          <div id="subtask" role="listitem" class="swiper-slide positions-content w-dyn-item">
                             <div class="swiper-slide__item position-content u-grid-autofit">
                               <div id="w-node-_34e61ccc-8d72-6196-048c-6fca7be68aa0-0e3b0963"
                                 class="positions-swiper__left">
@@ -2255,8 +2258,7 @@
                               </div>
                             </div>
                           </div>
-                          <div id="client_managment" role="listitem"
-                            class="swiper-slide positions-content w-dyn-item">
+                          <div id="client_managment" role="listitem" class="swiper-slide positions-content w-dyn-item">
                             <div class="swiper-slide__item position-content u-grid-autofit">
                               <div id="w-node-_34e61ccc-8d72-6196-048c-6fca7be68aa0-0e3b0963"
                                 class="positions-swiper__left">
@@ -2317,8 +2319,7 @@
                               </div>
                             </div>
                           </div>
-                          <div id="search_filter" role="listitem"
-                            class="swiper-slide positions-content w-dyn-item">
+                          <div id="search_filter" role="listitem" class="swiper-slide positions-content w-dyn-item">
                             <div class="swiper-slide__item position-content u-grid-autofit">
                               <div id="w-node-_34e61ccc-8d72-6196-048c-6fca7be68aa0-0e3b0963"
                                 class="positions-swiper__left">
@@ -2378,8 +2379,7 @@
                               </div>
                             </div>
                           </div>
-                          <div id="role_based" role="listitem"
-                            class="swiper-slide positions-content w-dyn-item">
+                          <div id="role_based" role="listitem" class="swiper-slide positions-content w-dyn-item">
                             <div class="swiper-slide__item position-content u-grid-autofit">
                               <div id="w-node-_34e61ccc-8d72-6196-048c-6fca7be68aa0-0e3b0963"
                                 class="positions-swiper__left">
@@ -2756,11 +2756,6 @@
         navigation: {
           nextEl: '.positions-next',
           prevEl: '.positions-prev',
-        },
-        breakpoints: {
-          991: {
-            navigation: false, // Desktop par arrows hide
-          },
         },
       });
     });
