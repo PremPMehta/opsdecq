@@ -1178,11 +1178,6 @@ blockquote {
     display: flex
 }
 
-@media screen and (max-width: 991px) {
-    .icon-embed.logo-mark {
-        height: 30px
-    }
-}
 
 .nav-mobile__btns-wrap {
     display: none
@@ -5444,7 +5439,7 @@ blockquote {
 
     .icon-embed.logo-mark {
         /* width: 20px; */
-        height: 22px
+        height: 35px
     }
 
     .nav__logo-link {

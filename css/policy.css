@@ -1,0 +1,78 @@
+/* Container */
+.policy-container{
+    max-width:1000px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+/* Page Title */
+.policy-title{
+    font-size:42px;
+    font-weight:700;
+    color:#000000;
+    margin-bottom:10px;
+}
+
+.policy-date{
+    color:#94a3b8;
+    margin-bottom:20px;
+}
+
+/* Section */
+.policy-section{
+    margin-bottom:20px;
+}
+
+.policy-section h2{
+    font-size:24px;
+    color: #00b2ff;
+    font-weight: 600;
+}
+
+.policy-section h3{
+    font-size:20px;
+    color:#000000;
+}
+
+.policy-section p{
+    margin-bottom:10px;
+}
+
+.policy-section ul{
+    padding-left:20px;
+    margin-top:10px;
+}
+
+.policy-section ul li{
+    margin-bottom:8px;
+}
+
+/* Card Style */
+.policy-card{
+    background-color: #f1faff;
+    border:1px solid #88dbff;
+    border-radius:12px;
+    padding:30px;
+}
+
+/* Important Note Box */
+.note-box{
+    background:#98daff66;
+    border-left:4px solid #00c1ff;
+    padding:18px;
+    border-radius:6px;
+}
+/* Footer spacing */
+.policy-footer-space{
+    height:80px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .policy-title{
+        font-size:30px;
+    }
+    .policy-section h2{
+        font-size:20px;
+    }
+}
